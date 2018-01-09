@@ -1,0 +1,53 @@
+set nocompatible              " be iMproved, required
+filetype off                  " required
+"------------------------------------------------------------------------------
+"VUNDLE
+"------------------------------------------------------------------------------
+
+" set the runtime path to include Vundle and initialize lets see if we set up:
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" command-t fuzzy file navigation
+Plugin 'wincent/command-t'
+
+" git integration with fugitive
+Plugin 'tpope/vim-fugitive'
+
+" scala syntax highlighting
+Plugin 'derekwyatt/vim-scala'
+
+" c languages syntax hightlighting
+Plugin 'Valloric/YouCompleteMe'
+
+" All of your Plugins must be added before the following line
+call vundle#end()             " required
+filetype indent plugin on     " required
+" To ignore plugin indent changes, instead use:
+"filetype plugin on
+"
+" Brief help
+" :PluginList       
+"   - lists configured plugins
+" :PluginInstall    
+"   - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo 
+"   - searches for foo; append `!` to refresh local cache
+" :PluginClean      
+"   - confirms removal of unused plugins; append `!` to auto-approve removal
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+"------------------------------------------------------------------------------
+"INDENTATION AND SPACING
+"------------------------------------------------------------------------------
+set wrap                        " wrap lines
+set number                      " line numbers
+set nomodeline                  " don't use modeline(security)
+syntax on
